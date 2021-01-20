@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Route, Routes, Navigate } from 'react-router-dom'
 
-import style from './style.module.css'
+import * as S from './style.module.css'
 
 import PasswordLost from './PasswordLost'
 import LoginForm from './Form'
@@ -17,12 +17,16 @@ const Login = () => {
   if (login === true) return <Navigate to="/account" />
 
   return (
-    <Routes>
-      <Route path="/" element={<LoginForm />} />
-      <Route path="signup" element={<LoginCreate />} />
-      <Route path="lost" element={<PasswordLost />} />
-      <Route path="reset" element={<PasswordReset />} />
-    </Routes>
+    <section className={S.login}>
+      <div className={S.forms}>
+        <Routes>
+          <Route path="/" element={<LoginForm />} />
+          <Route path="signup" element={<LoginCreate />} />
+          <Route path="lost" element={<PasswordLost />} />
+          <Route path="reset" element={<PasswordReset />} />
+        </Routes>
+      </div>
+    </section>
   )
 }
 
