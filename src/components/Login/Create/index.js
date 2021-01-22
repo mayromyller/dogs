@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as S from './style.module.css'
+// import * as S from './style.module.css'
 
 import Input from '../../Input'
 import Button from '../../Button'
@@ -32,7 +32,6 @@ const LoginCreate = () => {
     })
 
     const { response } = await request(url, options)
-    console.log(response)
     if (response.ok) userLogin(username.value, password.value)
   }
 
