@@ -1,0 +1,39 @@
+.header_navigation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.header_navigation a,
+.header_navigation button {
+  background: #eee;
+  border-radius: 0.2rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.header_navigation a:hover,
+.header_navigation button:hover,
+.header_navigation a:focus,
+.header_navigation button:focus {
+  background: white;
+  box-shadow: 0 0 0 3px #eee;
+  border-color: #333;
+  outline: none;
+}
+
+.header_navigation a.active {
+  background: white;
+  box-shadow: 0 0 0 3px #fea;
+  border-color: #fb1;
+}
+
+.header_navigation a.active svg > * {
+  fill: #fb1;
+}
