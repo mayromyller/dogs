@@ -6,7 +6,6 @@ import Feed from '../Feed'
 const Home = () => {
   return (
     <section className="container wrapper">
-      <h1>Home</h1>
       <Feed />
     </section>
   )

@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import * as S from './style.module.css'
 
 import PhotoFeed from './PhotoFeed'
 import Modal from './Modal'
 
 const Feed = () => {
+  const [modal, setModal] = useState(null)
   return (
     <div>
-      <h1 className={S.feed}>Feed</h1>
-      <Modal />
-      <PhotoFeed />
+      {modal && <Modal photo={modal} setModal={setModal} />}
+      <PhotoFeed setModal={setModal} />
     </div>
   )
 }
