@@ -10,16 +10,21 @@ import { PHOTOS_GET } from '../../../api/api'
 import Error from '../../../helpers/Error'
 import Loading from '../../../helpers/Loading'
 
-const PhotoFeed = ({ setModal }) => {
+const PhotoFeed = ({ page, user, setModal, setInfinite }) => {
   const { data, loading, error, request } = useFecth()
 
   useEffect(() => {
     async function fetchData() {
-      const { url, options } = PHOTOS_GET({ page: 1, total: 20, user: 0 })
-      const { json } = await request(url, options)
+      const total = 6
+      const { url, options } = PHOTOS_GET({ page, total, user })
+      const { response, json } = await request(url, options)
+      console.log(json)
+      if (response && response.ok && json.length < total) {
+        setInfinite(false)
+      }
     }
     fetchData()
-  }, [request])
+  }, [request, user, page, setInfinite])
 
   if (error) return <Error error={error} />
   if (loading) return <Loading />
