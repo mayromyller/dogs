@@ -1,5 +1,6 @@
 import React from 'react'
 import * as S from './style.module.css'
+import Image from '../../../helpers/Image/Image'
 
 const PhotoItem = ({ photo, setModal }) => {
   const handleClick = () => {
@@ -7,7 +8,7 @@ const PhotoItem = ({ photo, setModal }) => {
   }
   return (
     <li className={S.photoItem} onClick={handleClick}>
-      <img src={photo.src} alt={photo.title} />
+      <Image src={photo.src} alt={photo.title} />
       <span className={S.view}>{photo.hits}</span>
     </li>
   )

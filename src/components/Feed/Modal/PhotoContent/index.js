@@ -8,14 +8,16 @@ import PhotoDelete from '../PhotoDelete'
 
 import { UserContext } from '../../../../contexts/userContext'
 
+import Image from '../../../../helpers/Image/Image'
+
 const PhotoContent = ({ data }) => {
   const user = useContext(UserContext)
-  console.log(user.data.username)
   const { comments, photo } = data
+
   return (
     <div className={S.photo}>
       <div className={S.image}>
-        <img src={photo.src} alt={photo.title} />
+        <Image src={photo.src} alt={photo.title} />
       </div>
       <div className={S.details}>
         <div>
