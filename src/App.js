@@ -7,7 +7,8 @@ import Login from './components/Login'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './components/Home'
-import User from './components/User/index'
+import User from './components/User'
+import PhotoViewer from './components/PhotoViewer'
 
 import { UserStorage } from './contexts/userContext'
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="login/*" element={<Login />} />
             <ProtectedRoute path="account/*" element={<User />} />
+            <Route path="photo/:id" element={<PhotoViewer />} />
           </Routes>
           <Footer />
         </UserStorage>

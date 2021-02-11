@@ -52,6 +52,10 @@ input {
   margin: 0 auto;
 }
 
+.mainContainer {
+  margin-top: 2rem;
+}
+
 .wrapper {
   margin-top: 4rem;
 }

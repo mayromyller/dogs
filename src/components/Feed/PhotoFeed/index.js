@@ -18,7 +18,7 @@ const PhotoFeed = ({ page, user, setModal, setInfinite }) => {
       const total = 6
       const { url, options } = PHOTOS_GET({ page, total, user })
       const { response, json } = await request(url, options)
-      console.log(json)
+
       if (response && response.ok && json.length < total) {
         setInfinite(false)
       }
