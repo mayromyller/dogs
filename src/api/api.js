@@ -1,7 +1,7 @@
 // local_api
-export const API_URL = 'http://localhost:10003/json'
+// export const API_URL = 'http://localhost:10003/json'
 // online_api
-// export const API_URL = 'https://dogsapi.origamid.dev/json'
+export const API_URL = 'https://dogsapi.origamid.dev/json'
 
 export const TOKEN_POST = (body) => {
   return {
