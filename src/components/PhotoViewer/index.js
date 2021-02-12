@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import * as S from './style.module.css'
 
 import { useParams } from 'react-router-dom'
 

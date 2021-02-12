@@ -1,7 +1,5 @@
 import React from 'react'
 
-import * as S from './style.module.css'
-
 import { Route, Routes } from 'react-router-dom'
 
 import Feed from '../Feed'

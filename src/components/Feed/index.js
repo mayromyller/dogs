@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import * as S from './style.module.css'
 
 import Modal from './Modal'
 import PhotoFeed from './PhotoFeed'
