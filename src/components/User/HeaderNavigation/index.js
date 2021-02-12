@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 
 import * as S from './style.module.css'
 
@@ -17,6 +17,12 @@ const HeaderNavigation = () => {
 
   const { userLogout } = React.useContext(UserContext)
 
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    setMenu(false)
+  }, [pathname])
+
   return (
     <>
       {mobile && (
@@ -26,7 +32,11 @@ const HeaderNavigation = () => {
           onClick={() => setMenu(!menu)}
         ></button>
       )}
-      <nav className={S.header_navigation}>
+      <nav
+        className={`${mobile ? S.header_mobile : S.header_navigation} ${
+          menu && S.header_mobileActive
+        }`}
+      >
         <NavLink to="/account" end activeClassName={S.active}>
           <Feed />
           {mobile && 'Minhas postagens'}

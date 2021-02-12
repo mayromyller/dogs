@@ -78,3 +78,54 @@
   height: 4px;
   box-shadow: 0 8px currentColor, 0 -8px currentColor;
 }
+
+.header_mobile {
+  display: block;
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  padding: 0 1rem;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transform: translateX(-10px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header_mobile a,
+.header_mobile button {
+  display: flex;
+  align-items: center;
+  background: none;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.header_mobile a:hover svg > *,
+.header_mobile button:hover svg > * {
+  fill: #fb1;
+}
+
+.header_mobile a:hover,
+.header_mobile button:hover {
+  color: #fb1;
+}
+
+.header_mobile button {
+  border: none;
+}
+
+.header_mobile svg {
+  margin-right: 0.5rem;
+}
+
+.header_mobileActive {
+  transition: 0.3s;
+  transform: initial;
+  z-index: 100;
+  opacity: 1;
+  pointer-events: initial;
+}
