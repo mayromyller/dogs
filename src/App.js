@@ -22,14 +22,16 @@ function App() {
       <BrowserRouter>
         <UserStorage>
           <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="login/*" element={<Login />} />
-            <ProtectedRoute path="account/*" element={<User />} />
-            <Route path="photo/:id" element={<PhotoViewer />} />
-            <Route path="perfil/:user" element={<Profile />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <main className="main-app">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="login/*" element={<Login />} />
+              <ProtectedRoute path="account/*" element={<User />} />
+              <Route path="photo/:id" element={<PhotoViewer />} />
+              <Route path="perfil/:user" element={<Profile />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
           <Footer />
         </UserStorage>
       </BrowserRouter>
