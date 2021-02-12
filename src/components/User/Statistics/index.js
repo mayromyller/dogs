@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react'
-
-import * as S from './style.module.css'
+import React, { useEffect, lazy, Suspense } from 'react'
 
 import useFecth from '../../../hooks/useFecth'
 
@@ -9,7 +7,7 @@ import { GET_STATS } from '../../../api/api'
 import Loading from '../../../helpers/Loading'
 import Error from '../../../helpers/Error'
 
-import GraphStats from '../GraphStats'
+const GraphStats = lazy(() => import('../GraphStats'))
 
 const Statistics = () => {
   const { loading, error, data, request } = useFecth()
@@ -28,10 +26,10 @@ const Statistics = () => {
 
   if (data)
     return (
-      <div className={S.statistics}>
+      <Suspense fallback={<div></div>}>
         <h1>Estatísticas</h1>
         <GraphStats data={data} />
-      </div>
+      </Suspense>
     )
   else return null
 }
