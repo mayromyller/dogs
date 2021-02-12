@@ -5,6 +5,12 @@
   margin-bottom: 2rem;
 }
 
+@media (max-width: 40rem) {
+  .photo {
+    grid-template-columns: 1fr;
+  }
+}
+
 .files {
   margin-bottom: 2rem;
 }
