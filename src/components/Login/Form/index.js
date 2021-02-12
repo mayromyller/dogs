@@ -47,10 +47,10 @@ const LoginForm = () => {
       <div className={S.signup}>
         <h2 className={S.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui conta? Cadastre-se no site.</p>
+        <Link className={buttonComponentStyle.button} to="/login/signup">
+          Cadastro
+        </Link>
       </div>
-      <Link className={buttonComponentStyle.button} to="/login/signup">
-        Cadastro
-      </Link>
     </section>
   )
 }
