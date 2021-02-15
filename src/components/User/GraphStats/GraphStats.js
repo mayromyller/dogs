@@ -11,12 +11,13 @@ const GraphStats = ({ data }) => {
     const graphics = data.map((item) => {
       return {
         x: item.title,
-        y: Number(item.hits)
+        y: Number(item.acessos)
       }
     })
-
     setTotal(
-      data.map(({ hits }) => Number(hits)).reduce((acc, next) => acc + next)
+      data
+        .map(({ acessos }) => Number(acessos))
+        .reduce((acc, next) => acc + next)
     )
     setGraphs(graphics)
   }, [data])

@@ -10,10 +10,10 @@ import Error from '../../../helpers/Error'
 const GraphStats = lazy(() => import('../GraphStats/GraphStats'))
 
 const Statistics = () => {
-  const { loading, error, data, request } = useFecth()
+  const { data, loading, error, request } = useFecth()
 
   useEffect(() => {
-    const getData = async () => {
+    async function getData() {
       const { url, options } = GET_STATS()
       await request(url, options)
     }
@@ -28,7 +28,7 @@ const Statistics = () => {
     return (
       <Suspense fallback={<div></div>}>
         <h1>Estatísticas</h1>
-        <GraphStats data={data} />
+        {<GraphStats data={data} />}
       </Suspense>
     )
   else return null

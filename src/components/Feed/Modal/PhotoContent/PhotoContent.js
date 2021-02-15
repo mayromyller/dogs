@@ -27,14 +27,14 @@ const PhotoContent = ({ data }) => {
             ) : (
               <Link to={`/perfil/${photo.author}`}>@{photo.author}</Link>
             )}
-            <span className={S.views}>{photo.hits}</span>
+            <span className={S.views}>{photo.acessos}</span>
           </p>
           <h1 className="title">
             <Link to={`/photo/${photo.id}`}>{photo.title}</Link>
           </h1>
           <ul className={S.attributes}>
-            <li>{photo.weight} kg</li>
-            <li>{photo.age} anos</li>
+            <li>{photo.peso} kg</li>
+            <li>{photo.idade} anos</li>
           </ul>
         </div>
       </div>

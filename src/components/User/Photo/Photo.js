@@ -15,9 +15,9 @@ import Error from '../../../helpers/Error'
 import { useNavigate } from 'react-router-dom'
 
 const Photo = () => {
-  const name = useForm()
-  const age = useForm()
-  const weight = useForm()
+  const nome = useForm()
+  const idade = useForm()
+  const peso = useForm()
   const [img, setImg] = useState({})
   const navigate = useNavigate()
 
@@ -31,9 +31,9 @@ const Photo = () => {
     event.preventDefault()
 
     const formData = new FormData()
-    formData.append('name', name.value)
-    formData.append('age', age.value)
-    formData.append('weight', weight.value)
+    formData.append('nome', nome.value)
+    formData.append('idade', idade.value)
+    formData.append('peso', peso.value)
     formData.append('img', img.raw)
 
     const token = window.localStorage.getItem('token')
@@ -51,13 +51,13 @@ const Photo = () => {
   return (
     <section className={`${S.photo} animeLeft`}>
       <form onSubmit={handleSubmit}>
-        <Input label="Nome" type="text" name="nome" {...name} />
-        <Input label="Idade" type="number" name="age" {...age} />
-        <Input label="Peso" type="number" name="weight" {...weight} />
+        <Input label="Nome" type="text" name="nome" {...nome} />
+        <Input label="Idade" type="number" name="idade" {...idade} />
+        <Input label="Peso" type="number" name="peso" {...peso} />
         <input
           className={S.files}
           type="file"
-          name="files"
+          name="img"
           id="img"
           onChange={handleChange}
         />

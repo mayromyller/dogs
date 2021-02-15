@@ -11,7 +11,7 @@ const PhotoItem = ({ photo, setModal }) => {
   return (
     <li className={S.photoItem} onClick={handleClick}>
       <Image src={photo.src} alt={photo.title} />
-      <span className={S.view}>{photo.hits}</span>
+      <span className={S.view}>{photo.acessos}</span>
     </li>
   )
 }
