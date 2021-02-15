@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import * as S from './style.module.css'
+import * as S from './FormComment.module.css'
 
 import { ReactComponent as SendComment } from '../../../../assets/enviar.svg'
 

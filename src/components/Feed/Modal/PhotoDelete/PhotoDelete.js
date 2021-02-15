@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as S from './style.module.css'
+import * as S from './PhotoDelete.module.css'
 
 import { PHOTO_DELETE } from '../../../../api/api'
 import useFecth from '../../../../hooks/useFecth'

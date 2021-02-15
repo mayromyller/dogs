@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
-import Modal from './Modal'
-import PhotoFeed from './PhotoFeed'
+import Modal from './Modal/Modal'
+import PhotoFeed from './PhotoFeed/PhotoFeed'
 
 const Feed = ({ user }) => {
   const [modal, setModal] = useState(null)

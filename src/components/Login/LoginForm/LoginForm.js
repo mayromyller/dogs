@@ -2,11 +2,11 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-import * as S from './style.module.css'
-import * as buttonComponentStyle from '../../Button/style.module.css'
+import * as S from './LoginForm.module.css'
+import * as buttonComponentStyle from '../../Button/Button.module.css'
 
-import Input from '../../Input'
-import Button from '../../Button'
+import Input from '../../Input/Input'
+import Button from '../../Button/Button'
 import useForm from '../../../hooks/useForm'
 
 import Error from '../../../helpers/Error'

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import * as S from './style.module.css'
+import * as S from './PhotoContent.module.css'
 
 import { Link } from 'react-router-dom'
 
-import PhotoComments from '../PhotoComments'
-import PhotoDelete from '../PhotoDelete'
+import PhotoComments from '../PhotoComments/PhotoComments'
+import PhotoDelete from '../PhotoDelete/PhotoDelete'
 
 import { UserContext } from '../../../../contexts/userContext'
 

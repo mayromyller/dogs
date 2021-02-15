@@ -2,8 +2,8 @@ import React from 'react'
 
 // import * as S from './style.module.css'
 
-import Input from '../../Input'
-import Button from '../../Button'
+import Input from '../../Input/Input'
+import Button from '../../Button/Button'
 
 import useForm from '../../../hooks/useForm'
 import useFecth from '../../../hooks/useFecth'

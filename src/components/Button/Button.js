@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from './style.module.css'
+import * as S from './Button.module.css'
 
 const Button = ({ children, ...props }) => {
   return (

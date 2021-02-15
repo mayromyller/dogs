@@ -2,13 +2,13 @@ import React from 'react'
 
 import { Route, Routes, Navigate } from 'react-router-dom'
 
-import * as S from './style.module.css'
+import * as S from './Login.module.css'
 
-import PasswordLost from './PasswordLost'
-import LoginForm from './Form'
-import LoginCreate from './Create'
-import PasswordReset from './PasswordReset'
-import NotFound from '../NotFound'
+import PasswordLost from './PasswordLost/PasswordLost'
+import LoginForm from './LoginForm/LoginForm'
+import LoginCreate from './Create/LoginCreate'
+import PasswordReset from './PasswordReset/PasswordReset'
+import NotFound from '../NotFound/NotFound'
 
 import { UserContext } from '../../contexts/userContext'
 

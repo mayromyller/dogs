@@ -3,14 +3,14 @@ import './App.css'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import Login from './components/Login'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import User from './components/User'
-import PhotoViewer from './components/PhotoViewer'
-import Profile from './components/User/Profile'
-import NotFound from './components/NotFound'
+import Login from './components/Login/Login'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Home from './components/Home/Home'
+import User from './components/User/User'
+import PhotoViewer from './components/PhotoViewer/PhotoViewer'
+import Profile from './components/User/Profile/Profile'
+import NotFound from './components/NotFound/NotFound'
 
 import { UserStorage } from './contexts/userContext'
 

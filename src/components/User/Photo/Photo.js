@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 
-import * as S from './style.module.css'
+import * as S from './Photo.module.css'
 
-import Input from '../../Input'
-import Button from '../../Button'
+import Input from '../../Input/Input'
+import Button from '../../Button/Button'
 
 import useForm from '../../../hooks/useForm'
 import useFecth from '../../../hooks/useFecth'

@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
-import * as S from './style.module.css'
+import * as S from './PhotoFeed.module.css'
 
-import PhotoItem from '../PhotoItem'
+import PhotoItem from '../PhotoItem/PhotoItem'
 
 import useFecth from '../../../hooks/useFecth'
 
 import { PHOTOS_GET } from '../../../api/api'
 
 import Error from '../../../helpers/Error'
-import Loading from '../../../helpers/Loading'
+import Loading from '../../../helpers/Loading/Loading'
 
 const PhotoFeed = ({ page, user, setModal, setInfinite }) => {
   const { data, loading, error, request } = useFecth()

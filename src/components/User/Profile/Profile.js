@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useParams } from 'react-router-dom'
 
-import Feed from '../../Feed'
+import Feed from '../../Feed/Feed'
 
 const Profile = () => {
   const { user } = useParams()

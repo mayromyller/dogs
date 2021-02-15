@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import * as S from './style.module.css'
+import * as S from './GraphStats.module.css'
 
 import { VictoryPie, VictoryChart, VictoryBar } from 'victory'
 

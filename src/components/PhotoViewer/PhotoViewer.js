@@ -7,9 +7,9 @@ import useFecth from '../../hooks/useFecth'
 import { PHOTO_GET } from '../../api/api'
 
 import Error from '../../helpers/Error'
-import Loading from '../../helpers/Loading'
+import Loading from '../../helpers/Loading/Loading'
 
-import PhotoContent from '../Feed/Modal/PhotoContent'
+import PhotoContent from '../Feed/Modal/PhotoContent/PhotoContent'
 
 const PhotoViewer = () => {
   const { id } = useParams()

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
-import Input from '../../Input'
-import Button from '../../Button'
+import Input from '../../Input/Input'
+import Button from '../../Button/Button'
 
 import Error from '../../../helpers/Error'
 

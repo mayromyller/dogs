@@ -2,11 +2,11 @@ import React from 'react'
 
 import { Route, Routes } from 'react-router-dom'
 
-import Feed from '../Feed'
-import HeaderUser from './HeaderUser'
-import Photo from './Photo'
-import Statistics from './Statistics'
-import NotFound from '../NotFound'
+import Feed from '../Feed/Feed'
+import HeaderUser from './UserHeader/UserHeader'
+import Photo from './Photo/Photo'
+import Statistics from './Statistics/Statistics'
+import NotFound from '../NotFound/NotFound'
 
 import { UserContext } from '../../contexts/userContext'
 

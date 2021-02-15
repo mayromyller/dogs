@@ -1,9 +1,9 @@
 import React, { useContext, useState, useRef, useEffect } from 'react'
-import * as S from './style.module.css'
+import * as S from './PhotoComments.module.css'
 
 import { UserContext } from '../../../../contexts/userContext'
 
-import FormComment from '../FormComment'
+import FormComment from '../FormComment/FormComment'
 
 const PhotoComments = (props) => {
   const [comments, setComments] = useState(() => props.comments)

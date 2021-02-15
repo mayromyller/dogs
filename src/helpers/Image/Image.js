@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import * as S from './style.module.css'
+import * as S from './Image.module.css'
 
 const Image = ({ alt, ...props }) => {
   const [load, setLoad] = useState(true)

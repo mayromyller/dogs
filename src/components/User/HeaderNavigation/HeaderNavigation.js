@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 
-import * as S from './style.module.css'
+import * as S from './HeaderNavigation.module.css'
 
 import { UserContext } from '../../../contexts/userContext'
 

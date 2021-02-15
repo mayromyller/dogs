@@ -1,7 +1,7 @@
 import React from 'react'
 
-import * as S from './style.module.css'
-import HeaderNavigation from '../HeaderNavigation/index'
+import * as S from './UserHeader.module.css'
+import HeaderNavigation from '../HeaderNavigation/HeaderNavigation'
 
 import { useLocation } from 'react-router-dom'
 

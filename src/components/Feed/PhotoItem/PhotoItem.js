@@ -1,5 +1,7 @@
 import React from 'react'
-import * as S from './style.module.css'
+
+import * as S from './PhotoItem.module.css'
+
 import Image from '../../../helpers/Image/Image'
 
 const PhotoItem = ({ photo, setModal }) => {

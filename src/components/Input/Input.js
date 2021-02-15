@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from './style.module.css'
+import * as S from './Input.module.css'
 
 const Input = ({ label, type, name, value, onChange, onBlur, error }) => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import style from './style.module.css'
+import style from './Header.module.css'
 import { ReactComponent as Dogs } from '../../assets/dogs.svg'
 import { UserContext } from '../../contexts/userContext'
 

@@ -4,10 +4,10 @@ import useFecth from '../../../hooks/useFecth'
 
 import { GET_STATS } from '../../../api/api'
 
-import Loading from '../../../helpers/Loading'
+import Loading from '../../../helpers/Loading/Loading'
 import Error from '../../../helpers/Error'
 
-const GraphStats = lazy(() => import('../GraphStats'))
+const GraphStats = lazy(() => import('../GraphStats/GraphStats'))
 
 const Statistics = () => {
   const { loading, error, data, request } = useFecth()
