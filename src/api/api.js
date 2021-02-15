@@ -1,3 +1,4 @@
+/* For practical purposes always use the online version of the API */
 // local_api
 // export const API_URL = 'http://localhost:10003/json'
 // online_api

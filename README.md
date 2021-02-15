@@ -3,7 +3,7 @@
 </h1>
 <p align="center">Uma rede social para pets 🐕 | 🐈.</p>
 <h5 align="center">
-	🚧   Em construção 🚀 🚧
+	🚧   Em construção  🚧
 </h5>
 
 ### Sobre o app
@@ -37,7 +37,7 @@ Para rodar o app garanta que você tenha as seguintes ferramentas: [Git](https:/
 Clone este repositório
 
 ```
-git clone <https://github.com/mayromyller/dogs-pet-social-network.git>
+git clone https://github.com/mayromyller/dogs-pet-social-network.git
 ```
 
 Acesse a pasta
@@ -49,16 +49,30 @@ cd dogs/
 Instale as dependências
 
 ```
-yarn install ou npm install
+yarn install
+```
+
+ou
+
+```
+npm install
 ```
 
 Rode em modo desenvolvedor
 
 ```
-yarn start ou npm run start
+yarn start
+```
+
+ou
+
+```
+npm run start
 ```
 
 A aplicação irá rodar em: [http://localhost:3000](http://localhost:3000)
+
+Caso queria testar essa aplicação já rodando em produção (com as últimas atualizações feitas), abra aqui: [Dogs](https://dogs-pet-social-network.mayromyller.vercel.app/)
 
 ### Tecnologias
 
