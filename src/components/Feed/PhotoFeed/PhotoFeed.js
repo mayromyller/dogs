@@ -8,10 +8,9 @@ import useFecth from '../../../hooks/useFecth'
 import { PHOTOS_GET } from '../../../api/api'
 
 import Error from '../../../helpers/Error'
-import Loading from '../../../helpers/Loading/Loading'
 
-const PhotoFeed = ({ page, user, setModal, setInfinite }) => {
-  const { data, loading, error, request } = useFecth()
+const PhotoFeed = ({ page, user, setModal, setInfinite, photo }) => {
+  const { data, error, request } = useFecth()
 
   useEffect(() => {
     async function fetchData() {
@@ -24,15 +23,14 @@ const PhotoFeed = ({ page, user, setModal, setInfinite }) => {
       }
     }
     fetchData()
-  }, [request, user, page, setInfinite])
+  }, [request, user, page, setInfinite, photo])
 
   if (error) return <Error error={error} />
-  if (loading) return <Loading />
   if (data)
     return (
       <ul className={`${S.feed} animeLeft`}>
-        {data.map((photo) => (
-          <PhotoItem setModal={setModal} key={photo.id} photo={photo} />
+        {data.map((photoItem) => (
+          <PhotoItem setModal={setModal} key={photoItem.id} photo={photoItem} />
         ))}
       </ul>
     )

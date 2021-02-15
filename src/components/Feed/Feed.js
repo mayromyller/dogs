@@ -4,7 +4,7 @@ import Modal from './Modal/Modal'
 import PhotoFeed from './PhotoFeed/PhotoFeed'
 
 const Feed = ({ user }) => {
-  const [modal, setModal] = useState(null)
+  const [photo, setPhoto] = useState(null)
   const [pages, setPages] = useState([1])
   const [infinite, setInfinite] = useState(true)
 
@@ -34,14 +34,15 @@ const Feed = ({ user }) => {
 
   return (
     <div>
-      {modal && <Modal photo={modal} setModal={setModal} />}
+      {photo && <Modal photo={photo} setModal={setPhoto} />}
       {pages.map((page) => (
         <PhotoFeed
           page={page}
           key={page}
           setInfinite={setInfinite}
           user={user}
-          setModal={setModal}
+          photo={photo}
+          setModal={setPhoto}
         />
       ))}
     </div>
