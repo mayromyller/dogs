@@ -17,7 +17,7 @@ const GraphStats = ({ data }) => {
     setTotal(
       data
         .map(({ acessos }) => Number(acessos))
-        .reduce((acc, next) => acc + next)
+        .reduce((acc, next) => acc + next, 0)
     )
     setGraphs(graphics)
   }, [data])
